@@ -4,6 +4,11 @@
 	border: 0;
 	outline: 0;
 }
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 #demo-content{
 	margin: 0;
 	padding: 0;
@@ -11,17 +16,33 @@
 	outline: 0;
 	width: 100%;
 }
+.lines:after{
+	content: '';
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	width: 100%; 
+	height: 100%;
+	background-image: url('../img/walpaperAfter.png');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+}
+
 header{
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 85px;
 	background-color: rgb(33,33,33);
+	position: absolute;
+	z-index: 1;
+	top: 0;
 }
 header .studio-404-headerContainer{
-	margin: 0 5%;
-	padding: 0;
-	width: 90%;
+	margin: 0;
+	padding: 0 10px;
+	width: 100%;
 	float: left;
 }
 header img{
@@ -44,6 +65,27 @@ header .studio-404-topMenu ul li{
 	line-height: 80px; 
 	float: left;
 	text-align: center;
+}
+main{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+main .studio-404-Container{
+	margin: 0;
+	padding: 0; 
+	width: calc(100% - 20px); 
+	width: -webkit-calc(100% - 20px); 
+	width: -moz-calc(100% - 20px);
+	position: absolute;
+	top: 110px;
+	left: 10px;
+	right: 10px;
+	background-color: rgb(255,255,255);
+	z-index: 1;
+}
+.bg{
+	display: none; 
 }
 
 @media(max-width:480px){ 

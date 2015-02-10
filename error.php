@@ -26,7 +26,7 @@
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h2>Home text</h2>
+				<h2>Error page not found !</h2>
 			</div>
 		</div>		
 

@@ -21,7 +21,29 @@
 	<link rel="stylesheet" href="assets/css/en.css" type="text/css" />
 
 </head>
-<body class="demo">
+<?php
+/* black and white background image START */
+error_reporting(0);
+$the_bg = "assets/img/bg.jpg";
+$ext = end(explode(".",$the_bg));
+
+if($ext=="png"){
+	$im = imagecreatefrompng($the_bg);
+	$filter = imagefilter($im, IMG_FILTER_GRAYSCALE);
+	$i = imagepng($im, $the_bg);
+}else if($ext=="jpg"){
+	$im = imagecreatefromjpeg($the_bg);
+	$filter = imagefilter($im, IMG_FILTER_GRAYSCALE);
+	$i = imagejpeg($im, $the_bg);
+}else if($ext=="gif"){
+	$im = imagecreatefromgif($the_bg);
+	$filter = imagefilter($im, IMG_FILTER_GRAYSCALE);
+	$i = imagegif($im, $the_bg);
+}
+/* black and white background image START */
+?>
+<body class="demo"> 
+	<div class="bg"><?=$the_bg?></div>
 	<!--[if lt IE 7]>
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->

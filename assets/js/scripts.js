@@ -2,21 +2,58 @@ $(document).ready(function() {
 	var page = '';
 	
 	var url_page = getUrlParameter("page"); 
+	var i = $(".bg").html();
 
-	$.get( "file_get_content.php?page="+url_page, function( data ) {
-		if( data != 1)
-	   		$('#demo-content').html(data);
-	});	
+	
+
+	$("<img src='"+i+"' alt='Welcome page background' />").load(function() { 
+			$.get( "file_get_content.php?page="+url_page, function( data ) {	
+				if(url_page=="home"){
+
+				}else{		
+					$(".demo").css({
+					"background":"url('"+i+"') no-repeat center center fixed", 
+					"background-repeat":"no-repeat", 
+					"background-size":"cover", 
+					"-webkit-background-size":"cover", 
+					"-moz-background-size":"cover", 
+					"-o-background-size":"cover", 
+					"background-position":"0px 80px"
+					});
+					$("body").addClass("lines");
+				} 
+				$('#demo-content').html(data);
+			});	
+		}).error(function() { 
+	});
+	
+	
+	
 	
 });
 
 function getNewUrl(u){
-	$.get( "file_get_content.php?page="+u, function( data ) {
-		if( data != 1)
-	   		$('#demo-content').html(data);
-	   	else
-	   		$('#demo-content').html('Page Not found !');
-	});
+	var i = $(".bg").html();
+	$.get( "file_get_content.php?page="+u, function( data ) {	
+		if(u=="home"){
+			$(".demo").css({
+			"background":""
+			});
+			$("body").removeClass("lines");
+		}else{		
+			$(".demo").css({
+			"background":"url('"+i+"') no-repeat center center fixed", 
+			"background-repeat":"no-repeat", 
+			"background-size":"cover", 
+			"-webkit-background-size":"cover", 
+			"-moz-background-size":"cover", 
+			"-o-background-size":"cover", 
+			"background-position":"0px 80px"
+			});
+			$("body").addClass("lines");
+		} 
+		$('#demo-content').html(data);
+	});	
 }
 
 // get url paramiter 
