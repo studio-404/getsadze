@@ -1,1 +1,1 @@
-echo # getsadze design
+#getsadze design
