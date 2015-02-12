@@ -21,9 +21,12 @@
 	<link rel="stylesheet" href="assets/css/general.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/en.css" type="text/css" />
 
-	<!--Slider START
-	<link rel="stylesheet" href="_plugins/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css" />	
-	Slider END-->
+	<!--Slider START-->
+    <link rel="stylesheet" href="_plugins/buildinternet-supersized-d6ed282/slideshow/css/supersized.css" type="text/css" media="screen" />		
+
+	<script type="text/javascript" src="_plugins/buildinternet-supersized-d6ed282/slideshow/js/jquery.easing.min.js"></script>		
+	<script type="text/javascript" src="_plugins/buildinternet-supersized-d6ed282/slideshow/js/supersized.3.2.7.min.js"></script>		
+    <!--Slider END-->
 
 </head>
 <?php
@@ -66,5 +69,35 @@ if($ext=="png"){
 
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	<script src="assets/js/scripts.js" charset="utf-8"></script>
+	<script type="text/javascript">	
+		jQuery(function($){			
+
+			$.supersized({
+			
+				// Functionality
+				slide_interval          :   5000,		// Length between transitions
+				transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+				transition_speed		:	2000,		// Speed of transition
+														   
+				// Components							
+				slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+				slides 					:  	[			// Slideshow Images
+						{	
+							image : 'assets/img/slide.jpg', 
+							title : 'bg 1', 
+							thumb : 'assets/img/slide.jpg', 
+							url : 'javascript:;'
+						},
+						{	
+							image : 'assets/img/Desert.jpg', 
+							title : 'bg 1', 
+							thumb : 'assets/img/Desert.jpg', 
+							url : 'javascript:;'
+						}
+				]
+				
+			});
+		});
+	</script>
 </body>
 </html>

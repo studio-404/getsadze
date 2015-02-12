@@ -8,7 +8,12 @@ $(document).ready(function() {
 
 	$("<img src='"+i+"' alt='Welcome page background' />","<img src='"+iSplited[0]+"' alt='Welcome page background' />", "<img src='assets/img/walpaperAfter.png' alt='Welcome page background' />" 
 	).load(function() { 
-			$.get( "file_get_content.php?page="+url_page, function( data ) {	
+			$.get( "file_get_content.php?page="+url_page, function( data ) { 	
+				if(url_page!="home"){
+					$("#supersized").css({"display":"none"});
+				}else{
+					$("#supersized").css({"display":"block"});
+				}
 				if(url_page!="works"){
 					$(".demo").css({
 					"background":""
@@ -22,7 +27,7 @@ $(document).ready(function() {
 					"-webkit-background-size":"cover", 
 					"-moz-background-size":"cover", 
 					"-o-background-size":"cover", 
-					"background-position":"0px 80px"
+					"background-position":"0px 0px"
 					});
 					$("body").addClass("lines");
 				} 
@@ -30,6 +35,8 @@ $(document).ready(function() {
 			});	
 		}).error(function() { 
 	});
+		//hovered
+
 
 });
 
@@ -39,6 +46,11 @@ function getNewUrl(u){
 	var iSplited = i2.split(",");
 	//$('#demo-content').html("<div class='loader'><img src='assets/img/loader.gif' alt='loader' align='center'></div>");
 	$.get( "file_get_content.php?page="+u, function( data ) {	
+		if(u!="home"){
+			$("#supersized").css({"display":"none"});
+		}else{
+			$("#supersized").css({"display":"block"});
+		}
 		if(u!="works"){
 			$(".demo").css({
 			"background":""
@@ -52,7 +64,7 @@ function getNewUrl(u){
 			"-webkit-background-size":"cover", 
 			"-moz-background-size":"cover", 
 			"-o-background-size":"cover", 
-			"background-position":"0px 80px"
+			"background-position":"0px 0px"
 			});
 			$("body").addClass("lines");
 		} 
