@@ -1,4 +1,4 @@
-<header class="studio-404-header">
+<header class="studio-404-header PositionFixed">
 	<div class="container studio-404-headerContainer">
 			<div class="col-lg-2"><a href="home" class="preventlink"><img src="assets/img/logo.png" width="150" height="63" alt="" /></a></div>
 			<div class="col-lg-7 studio-404-topMenu">
@@ -44,7 +44,7 @@
 </div>
 
 
-<nav class="studio-404-navigation">
+<nav class="studio-404-navigation PositionFixed">
 	<div class="col-lg-2">
 	</div>
 	<div class="col-lg-10">
@@ -165,7 +165,7 @@
 	<div class="container studio-404-Container">
 		
 		
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=1">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -176,7 +176,7 @@
 			</div>
 
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=2">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -186,7 +186,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=3">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -196,7 +196,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=4">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -206,7 +206,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=5">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -216,7 +216,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=6">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -226,7 +226,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=7">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -236,7 +236,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=8">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -246,7 +246,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=9">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -256,7 +256,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=10">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -266,7 +266,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem"data-url="viewwork&id=11">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -276,7 +276,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 studio-404-workItem" data-url="viewwork&id=12">
 				<a href="">
 					<img src="assets/img/project.jpg" width="100%" alt="" />
 				</a>
@@ -311,6 +311,15 @@
 
 		$(".studio-404-workItem").stop().hover(function(){
 			$(this).find(".stitle").stop().fadeToggle("slow");
+		});
+
+		$(".studio-404-Container .studio-404-workItem").each(function(){
+			$(this).click(function(e){				
+				e.preventDefault();
+				var ur = $(this).data("url");
+				window.history.pushState('page2', 'Title', 'index.php?page='+ur);
+				getNewUrl(ur);
+			});
 		});
 
 	});

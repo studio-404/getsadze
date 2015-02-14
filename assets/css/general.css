@@ -221,7 +221,7 @@ main .studio-404-Container{
 	padding: 0;
 	width: 100%;
 	position: absolute;
-	top: 80px;
+	top: 110px;
 	z-index: 1;
 }
 .studio-404-Container-contact{
@@ -246,6 +246,7 @@ main .studio-404-Container{
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	height: auto;
 	position: absolute;
 	top: 80px;
 	background-color: rgb(217,30,24);
@@ -253,6 +254,9 @@ main .studio-404-Container{
 	display: none;
 	z-index: 200;
 	overflow: hidden;
+}
+.studio-404-navigation div{
+	background-color: rgb(217,30,24);
 }
 .studio-404-leftzeroPadding{
 	padding-left: 0px !important; 
@@ -262,8 +266,36 @@ main .studio-404-Container{
 	text-decoration: underline;
 }
 .clearer{ clear: both; }
+.studio-404-borderLeft{
+	border-left: solid 1px #000000;
+}
+.studio-404-Container-About hr{
+	margin: 10px 0;
+	padding: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #000000;
 
-
+}
+.studio-404-navigationViewWork{
+	background-color: rgb(231,76,60);
+}
+.studio-404-navigationViewWork div{
+	background-color: rgb(231,76,60);
+}
+.studio-404-Container-workView{
+	margin: 130px 0 0 0;
+	padding: 0;
+	width: 100%;
+}
+.studio-404-workviewItem{
+	margin: 0;
+	padding-bottom: 30px;
+}
+.PositionFixed{
+	position: fixed !important;
+	z-index: 1000;
+}
 
 @media(max-width:480px){ 
 
@@ -288,6 +320,9 @@ main .studio-404-Container{
 		display: block;
 	}
 	.studio-404-navigation{
+		display: none;
+	}
+	.hideMobile{
 		display: none;
 	}
 }

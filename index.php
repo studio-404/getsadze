@@ -57,6 +57,26 @@ if($ext=="png"){
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
 
+	<header class="studio-404-header beforeHeader" style="display:none">
+		<div class="container studio-404-headerContainer">
+			<div class="col-lg-2"><a href="home" class="preventlink"><img src="assets/img/logo.png" width="150" height="63" alt="" /></a></div>
+			<div class="col-lg-7 studio-404-topMenu">
+				<ul>
+					<li><a href="works" class="preventlink hoverSub">Works</a></li>
+					<li><a href="about" class="preventlink hoverSub">About</a></li>
+					<li><a href="contact" class="preventlink hoverSub">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 studio-404-socialNetworks">
+				<ul>
+					<li class="message"><a href=""><img src="assets/img/ms.png" width="28" height="19" alt="Message" /></a></li>
+					<li><a href=""><img src="assets/img/in.png" width="19" height="19" alt="LinkedIn" /></a></li>
+					<li><a href=""><img src="assets/img/fb.png" width="19" height="19" alt="facebook" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
 	<!-- Demo content -->			
 	<div id="demo-content">
 

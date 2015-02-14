@@ -6,8 +6,17 @@ $(document).ready(function() {
 	var i2 = $(".bgW").html();
 	var iSplited = i2.split(",");	
 
+	if(url_page!="home"){
+		$("#supersized").css({"display":"none"});
+	}else{
+		$("#supersized").css({"display":"block"});
+	}
+
+	$(".beforeHeader").fadeIn("slow");
+
 	$("<img src='"+i+"' alt='Welcome page background' />","<img src='"+iSplited[0]+"' alt='Welcome page background' />", "<img src='assets/img/walpaperAfter.png' alt='Welcome page background' />" 
 	).load(function() { 
+			$('#demo-content').css({"visibility":"hidden"});
 			$.get( "file_get_content.php?page="+url_page, function( data ) { 	
 				if(url_page!="home"){
 					$("#supersized").css({"display":"none"});
@@ -16,7 +25,7 @@ $(document).ready(function() {
 				}
 				if(url_page!="works"){
 					$(".demo").css({
-					"background":""
+					"background":"none"
 					});
 					$("body").removeClass("lines");
 				}else{		
@@ -32,6 +41,8 @@ $(document).ready(function() {
 					$("body").addClass("lines");
 				} 
 				$('#demo-content').html(data);
+				$('#demo-content').css({"visibility":"visible"});
+				$('.beforeHeader').remove();
 			});	
 		}).error(function() { 
 	});
