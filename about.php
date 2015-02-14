@@ -234,7 +234,7 @@
 							Georgian Technical University </p>
 		 				</div>
 		 			</div>
-
+		 			<div class="clearer"></div>
 		 		</div>
 		 		<div class="clearer"></div>
 
