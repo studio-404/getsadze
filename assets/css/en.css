@@ -86,10 +86,41 @@ header .studio-404-topMenu ul li a:hover{
     line-height: 25px;
     font-family: 'font_bold';   
 }
+.leftSideAbout .aboutTexts .line h4{
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'font_bold';  
+    color: rgb(255,255,255);
+}
+.leftSideAbout .aboutTexts .line p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'font_regular';  
+    color: rgb(255,255,255);
+}
 .studio-404-navigationViewWork h4 span{
     margin: 0;
     padding: 0;
     font-size: 12px;
     line-height: 25px;
     font-family: 'font_bold';   
+}
+.rightSideAbout h4{
+    margin: 0;
+    padding: 30px 0 0 20px;
+    font-size: 38px;  
+    color: #212121;
+    text-align: left;
+}
+.rightSideAbout p{
+    margin: 0;
+    padding: 20px 20px 0 20px;
+    line-height: 38px;
+    font-size: 38px;  
+    color: #ffffff;
+    text-align: left;
 }

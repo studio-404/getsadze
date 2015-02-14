@@ -23,7 +23,7 @@ $(document).ready(function() {
 				}else{
 					$("#supersized").css({"display":"block"});
 				}
-				if(url_page!="works"){
+				if(url_page!="works" && url_page !="about"){
 					$(".demo").css({
 					"background":"none"
 					});

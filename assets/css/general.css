@@ -218,14 +218,15 @@ main .studio-404-Container{
 /*navigation END*/
 .studio-404-Container-About{
 	margin: 0;
-	padding: 0 10px;
-	width: -webkit-calc(100% - 20px);
-	width: -moz-calc(100% - 20px);
-	width: calc(100% - 20px);
+	padding: 0;
+	width: -webkit-calc(100% - 30px);
+	width: -moz-calc(100% - 30px);
+	width: calc(100% - 30px);
 	position: absolute;
 	top: 100px;
-	left: 10px;
+	left: 15px;
 	z-index: 1;
+	background-color: rgb(255,255,255);
 }
 .studio-404-Container-contact{
 	margin: 0;
@@ -300,11 +301,39 @@ main .studio-404-Container{
 	z-index: 1000;
 }
 .leftSideAbout{
+	margin: 15px 0;
+	padding: 0;
+	width: 100%;
 	background-color: rgb(33,33,33);
 }
+.leftSideAbout .nikiImage{
+	margin: 0;
+	padding: 0;
+}
+.leftSideAbout .nikiImage img{
+	margin: 10px 0 0 0;
+	padding: 0;
+	outline: none;
+	width: 270px;
+	text-align: right;
+}
+.leftSideAbout .aboutTexts{
+	margin: 30px 0 0 0;
+	padding: 0 5px;
+}
+.leftSideAbout .aboutTexts .line{
+	margin: 0 0 15px 0;
+	padding: 0 0 0 10px;
+	border-left: solid 1px rgb(255,255,255);
+}
+
 .rightSideAbout{
+	margin: 15px 0;
+	padding: 0 0 20px 0;
+	width: 100%;
 	background-color: rgb(242,121,34);
 }
+
 
 @media(max-width:480px){ 
 
