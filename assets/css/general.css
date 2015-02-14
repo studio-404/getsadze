@@ -218,10 +218,13 @@ main .studio-404-Container{
 /*navigation END*/
 .studio-404-Container-About{
 	margin: 0;
-	padding: 0;
-	width: 100%;
+	padding: 0 10px;
+	width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: calc(100% - 20px);
 	position: absolute;
-	top: 110px;
+	top: 100px;
+	left: 10px;
 	z-index: 1;
 }
 .studio-404-Container-contact{
@@ -295,6 +298,12 @@ main .studio-404-Container{
 .PositionFixed{
 	position: fixed !important;
 	z-index: 1000;
+}
+.leftSideAbout{
+	background-color: rgb(33,33,33);
+}
+.rightSideAbout{
+	background-color: rgb(242,121,34);
 }
 
 @media(max-width:480px){ 
