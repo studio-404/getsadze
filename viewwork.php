@@ -3,9 +3,11 @@
 			<div class="col-lg-2"><a href="home" class="preventlink"><img src="assets/img/logo.png" width="150" height="63" alt="" /></a></div>
 			<div class="col-lg-7 studio-404-topMenu">
 				<ul>
-					<li><a href="works" class="preventlink hoverSub hovered">Works</a></li>
-					<li><a href="about" class="preventlink hoverSub">About</a></li>
-					<li><a href="contact" class="preventlink hoverSub">Contact</a></li> 
+					<li><a href="websites" class="preventlink">Websites</a></li>
+					<li><a href="identity" class="preventlink">Identity</a></li>
+					<li><a href="print" class="preventlink">Print</a></li>
+					<li><a href="various" class="preventlink">Various</a></li>
+					<li><a href="about" class="preventlink">About me</a></li>
 				</ul>
 				<script type="text/javascript">
 				$(".preventlink").click(function(e){
@@ -32,16 +34,17 @@
 	    <div class="toggleline"></div>
 	    <div class="toggleline"></div>
 	  </div>
-	  
-	  <div class="menu">
+
+	 <div class="menu">
 	    <ul>
-	     	<li><a href="works" class="preventlink">Works</a></li>
-			<li><a href="about" class="preventlink">About</a></li>
-			<li><a href="contact" class="preventlink">Contact</a></li>
+	     	<li><a href="websites" class="preventlink">Websites</a></li>
+			<li><a href="identity" class="preventlink">Identity</a></li>
+			<li><a href="print" class="preventlink">Print</a></li>
+			<li><a href="various" class="preventlink">Various</a></li>
+			<li><a href="about" class="preventlink">About me</a></li>
 	    </ul>
 	</div>
 </div>
-
 
 
 <nav class="studio-404-navigation studio-404-navigationViewWork" style="display:block">
@@ -50,7 +53,6 @@
 		<h4>Identity Design: <span>Funicular</span></h4>
 	</div>
 </nav>
-
 <main>
 	<div class="container studio-404-Container-workView">
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 studio-404-workviewItem">

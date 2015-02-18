@@ -10,25 +10,28 @@ $(document).ready(function() {
 		$("#supersized").css({"display":"none"});
 	}else{
 		$("#supersized").css({"display":"block"});
+		$('#demo-content').html(" ");
 	}
-
-	$(".beforeHeader").fadeIn("slow");
 
 	$("<img src='"+i+"' alt='Welcome page background' />","<img src='"+iSplited[0]+"' alt='Welcome page background' />", "<img src='assets/img/walpaperAfter.png' alt='Welcome page background' />" 
 	).load(function() { 
-			$('#demo-content').css({"visibility":"hidden"});
+
 			$.get( "file_get_content.php?page="+url_page, function( data ) { 	
 				if(url_page!="home"){
 					$("#supersized").css({"display":"none"});
 				}else{
 					$("#supersized").css({"display":"block"});
-				}
-				if(url_page!="works" && url_page !="about"){
+				}				
+				$('#demo-content').html(data);
+
+
+
+				if(url_page!="websites" &&  url_page!="identity" && url_page!="print" && url_page!="various" && url_page !="about"){
 					$(".demo").css({
 					"background":"none"
 					});
 					$("body").removeClass("lines");
-				}else{		
+				}else{	
 					$(".demo").css({
 					"background":"url('"+i+"') no-repeat center center fixed", 
 					"background-repeat":"no-repeat", 
@@ -39,30 +42,39 @@ $(document).ready(function() {
 					"background-position":"0px 0px"
 					});
 					$("body").addClass("lines");
-				} 
-				$('#demo-content').html(data);
-				$('#demo-content').css({"visibility":"visible"});
-				$('.beforeHeader').remove();
+				}
+
+
+
 			});	
+
+
 		}).error(function() { 
-	});
-		//hovered
-
-
+	}); 
 });
 
-function getNewUrl(u){
+function getNewUrl(urlget){
 	var i = $(".bg").html();
 	var i2 = $(".bgW").html();
 	var iSplited = i2.split(",");
-	//$('#demo-content').html("<div class='loader'><img src='assets/img/loader.gif' alt='loader' align='center'></div>");
-	$.get( "file_get_content.php?page="+u, function( data ) {	
-		if(u!="home"){
-			$("#supersized").css({"display":"none"});
-		}else{
-			$("#supersized").css({"display":"block"});
-		}
-		if(u!="works"){
+	$("body").removeClass("lines");
+	$('#demo-content').html('<img src="assets/img/loader.gif" class="loader" />');
+	if(urlget!="home"){
+		$("#supersized").css({"display":"none"});
+	}else{
+		$("#supersized").css({"display":"block"});
+	}
+	$(".demo").css({
+		"background":"none"
+	});
+	var url_page = getUrlParameter("page"); 
+	//if(url_page!="home"){
+		//$('#demo-content').html('<img src="assets/img/loader.gif" class="loader" />');
+	//}
+	
+	$.get( "file_get_content.php?page="+urlget, function( data ) {	
+		$('#demo-content').html(data);
+		if(urlget!="websites" && urlget!="identity" && urlget!="print" && urlget!="various" && urlget!="about"){
 			$(".demo").css({
 			"background":""
 			});
@@ -79,8 +91,10 @@ function getNewUrl(u){
 			});
 			$("body").addClass("lines");
 		} 
-		$('#demo-content').html(data);
+
+
 	});	
+	
 }
 
 // get url paramiter 

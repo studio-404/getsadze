@@ -16,8 +16,11 @@ body{
 	outline: 0;
 	width: 100%;
 }
-.lines:after{
-	content: '';
+.lines{
+	overflow: scroll;
+}
+.lines:before{
+	content: ' ';
 	margin: 0;
 	padding: 0;
 	border: 0; 
@@ -111,7 +114,6 @@ main .studio-404-Container{
 	width: 100%;
 	height: 100%;
 	display: block;
-
 }
 .studio-404-workItem:hover a img{
 	margin: 0;
@@ -182,7 +184,6 @@ main .studio-404-Container{
   position: relative;
   margin: 0 0 8px 136px;
 }
-
 .toggleline {
   margin-bottom: 5px;
   background: #A1A1A1;
@@ -210,10 +211,9 @@ main .studio-404-Container{
   background-color:#E4E4E4;
   border-top:1px solid #FFF;
 }
-
 .menu a:hover {
-  color:#FFF;
-  background-color:#918170;
+ color:#FFF;
+ background-color:#918170;
 }
 /*navigation END*/
 .studio-404-Container-About{
@@ -253,14 +253,14 @@ main .studio-404-Container{
 	height: auto;
 	position: absolute;
 	top: 80px;
-	background-color: rgb(217,30,24);
+	background-color: #f27922;
 	clear: both;
 	display: none;
 	z-index: 200;
 	overflow: hidden;
 }
 .studio-404-navigation div{
-	background-color: rgb(217,30,24);
+	background-color: #f27922;
 }
 .studio-404-leftzeroPadding{
 	padding-left: 0px !important; 
@@ -279,7 +279,6 @@ main .studio-404-Container{
 	width: 100%;
 	height: 1px;
 	background-color: #000000;
-
 }
 .studio-404-navigationViewWork{
 	background-color: rgb(231,76,60);
@@ -309,6 +308,7 @@ main .studio-404-Container{
 .leftSideAbout .nikiImage{
 	margin: 0;
 	padding: 0;
+	min-height: 450px;
 }
 .leftSideAbout .nikiImage img{
 	margin: 10px 0 0 0;
@@ -326,14 +326,85 @@ main .studio-404-Container{
 	padding: 0 0 0 10px;
 	border-left: solid 1px rgb(255,255,255);
 }
-
 .rightSideAbout{
 	margin: 15px 0;
 	padding: 0 0 20px 0;
 	width: 100%;
 	background-color: rgb(242,121,34);
 }
+#demo-content .loader{
+	margin:-50px 0 0 -50px;
+	padding: 0;
+	border: 0;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%; 
+}
+.ioo{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 120px;
+	background-color: #fff;
+	position: absolute;
+	top: 80px;
+	z-index: 200;
+	display:none;
+}
+.ioo .innerHtml{
+	margin: 20px;
+	padding: 0;
+	border: solid 15px #000;
+	min-height: 160px;
+}
+.ioo .innerHtml .headerInfo{
+	margin: 0;
+    padding: 20px 30px 20px 30px;
+}
+.ioo .innerHtml .studio-404-loadedImageitem{
+	margin-bottom: 30px;
+}
+.ioo .innerHtml .studio-404-loadedImageitem img{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: both;
+}
+.loader img{
+	margin: -10px 0 0 -50px;
+	padding: 0;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 10px;
+}
+.ioo .closeMe{
+	margin: 0;
+	padding: 0;
+	width: 43px;
+	height: 43px;
+	color: white;
+	font-size: 22px;
+	line-height: 43px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor:pointer;
+	background-image: url('../img/colseme.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -9999px;
+}
+header .studio-404-topMenu ul li a:hover{
+    color:#f27922;
+}
 
+header .studio-404-topMenu ul li .active{
+    color:#f27922 !important;
+}
 
 @media(max-width:480px){ 
 
@@ -342,11 +413,9 @@ main .studio-404-Container{
 @media(max-width:768px){ 
 
 }
-
 @media(max-width:992px){ 
 
 }
-
 @media(max-width:1199px){ 
 	.studio-404-socialNetworks{
 		display: none;
@@ -364,3 +433,5 @@ main .studio-404-Container{
 		display: none;
 	}
 }
+
+

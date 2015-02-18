@@ -4,13 +4,10 @@
 	display:block; 
 	position:fixed; 
 	left:0; 
-	top:85px !important; 
 	overflow:hidden; 
 	z-index:-999; 
 	width:100%; 
-	height: -webkit-calc(100% - 85px);
-	height: -moz-calc(100% - 85px);
-	height: calc(100% - 85px);
+	height: 100%
 }
 #supersized img { width:auto; height:auto; position:relative; display:none; outline:none; border:none; }
 #supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
